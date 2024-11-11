@@ -213,6 +213,7 @@ nav {
   display: none;
   background: transparent;
   border: none;
+  font-size: 20px;
   transition: all 300ms ease;
 }
 
@@ -275,6 +276,16 @@ nav {
   position: fixed;
   top: 24px;
   right: 18px;
+}
+
+.menu__close {
+  width: 24px;
+  height: 24px;
+  transition: all 300ms;
+}
+
+.menu__close:hover {
+  opacity: 0.5;
 }
 
 /* 
@@ -1217,9 +1228,9 @@ footer {
   margin-left: -16px;
 }
 
-.footer__social--link svg {
-  height: 16px;
-  width: 16px;
+.footer__social--link img {
+  height: 12px;
+  width: 12px;
 }
 
 .footer__social--link {

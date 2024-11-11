@@ -1,3 +1,11 @@
+function openMenu() {
+  document.body.classList.add("menu--open");
+}
+
+function closeMenu() {
+  document.body.classList.remove("menu--open");
+}
+
 const fileInput = document.getElementById("fileInput");
 const imageButtons = document.getElementById("image-buttons");
 const resetButton = document.getElementById("reset-button");
@@ -36,7 +44,8 @@ async function uploadTextToSpeech() {
     return;
   }
 
-  const url = "https://us-central1-frontend-simplified.cloudfunctions.net/textToImageGenerator";
+  const url =
+    "https://us-central1-frontend-simplified.cloudfunctions.net/textToImageGenerator";
 
   const options = {
     method: "POST",
@@ -60,7 +69,8 @@ async function uploadTextToSpeech() {
 
 async function mockUploadTextToSpeech() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
-  const url = "https://firebasestorage.googleapis.com/v0/b/frontend-simplified.appspot.com/o/Ai%20project%20images%2Fdog-in-park.jpg?alt=media&token=f81dd4d3-1029-440f-b297-da27cb4ee2b6";
+  const url =
+    "https://firebasestorage.googleapis.com/v0/b/frontend-simplified.appspot.com/o/Ai%20project%20images%2Fdog-in-park.jpg?alt=media&token=f81dd4d3-1029-440f-b297-da27cb4ee2b6";
   appendImageToContainer(url);
 }
 
