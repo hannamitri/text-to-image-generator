@@ -1025,6 +1025,7 @@ START
 
 main {
   margin-bottom: 96px;
+  overflow-x: hidden;
 }
 
 .start__container {
